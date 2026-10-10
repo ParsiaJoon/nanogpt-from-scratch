@@ -31,7 +31,7 @@ val_data = data[n:]
 print(len(train_data), len(val_data))
 
 
-def get_batch(data, batch_size, block_size):
+def get_batch(data, block_size, batch_size):
     ix = torch.randint(len(data) - block_size, (batch_size,))
     listx = []
     listy = []
